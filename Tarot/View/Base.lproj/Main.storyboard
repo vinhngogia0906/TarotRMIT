@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Oracle Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OracleController" customModule="Tarot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBc-0k-1fq">
+                                <rect key="frame" x="138.5" y="567" width="98" height="30"/>
+                                <state key="normal" title="Ask the oracle"/>
+                                <connections>
+                                    <action selector="response:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZM-yu-8fi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Think of a question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki9-bj-SA0">
+                                <rect key="frame" x="47" y="520" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="d77-pl-2sa">
+                                <rect key="frame" x="47" y="36" width="280" height="300"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lBc-0k-1fq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9A9-Tf-cND"/>
+                            <constraint firstItem="Ki9-bj-SA0" firstAttribute="width" secondItem="d77-pl-2sa" secondAttribute="width" id="AH1-oO-Zwx"/>
+                            <constraint firstItem="d77-pl-2sa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Cyv-bS-5Nu"/>
+                            <constraint firstItem="lBc-0k-1fq" firstAttribute="top" secondItem="Ki9-bj-SA0" secondAttribute="bottom" constant="26" id="atb-Na-5LS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lBc-0k-1fq" secondAttribute="bottom" constant="70" id="mGB-NJ-BAK"/>
+                            <constraint firstItem="d77-pl-2sa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="pQI-3w-o5q"/>
+                            <constraint firstItem="Ki9-bj-SA0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vgL-oV-dur"/>
+                            <constraint firstItem="lBc-0k-1fq" firstAttribute="top" secondItem="d77-pl-2sa" secondAttribute="bottom" constant="231" id="y6d-SZ-Y3d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardDesc" destination="Ki9-bj-SA0" id="zdu-DX-Xm5"/>
+                        <outlet property="imageCard" destination="d77-pl-2sa" id="HgZ-72-pI5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fool" width="300" height="519"/>
+    </resources>
+</document>
