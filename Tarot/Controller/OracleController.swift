@@ -13,7 +13,16 @@ class OracleController: UIViewController {
 
     @IBAction func response(_ sender: Any) {
         cardDesc.text = model1.respond()
-        imageCard.image = UIImage(named: model1.currentCardImageName)
+        imageCard.image = UIImage(named: model1.currentCard.imageName)
+//        var cardImageName: String = ""
+//        var message:String = ""
+//        model1.respond(cardImageName: &cardImageName, message: &message)
+//        cardDesc.text = message
+//        imageCard.image = UIImage(named: cardImageName)
+//        let response:(cardImageName: String, cardMessage: String) = model1.respond()
+//        cardDesc.text = response.cardMessage
+//        imageCard.image = UIImage(named: response.cardImageName)
+        
     }
     @IBOutlet weak var imageCard: UIImageView!
     @IBOutlet weak var cardDesc: UILabel!

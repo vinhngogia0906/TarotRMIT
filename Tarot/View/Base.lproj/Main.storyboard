@@ -25,13 +25,14 @@
                                     <action selector="response:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZM-yu-8fi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Think of a question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki9-bj-SA0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think of a question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki9-bj-SA0">
                                 <rect key="frame" x="47" y="520" width="280" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="answer"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="d77-pl-2sa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="d77-pl-2sa">
                                 <rect key="frame" x="47" y="36" width="280" height="300"/>
                             </imageView>
                         </subviews>
@@ -40,6 +41,8 @@
                             <constraint firstItem="lBc-0k-1fq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9A9-Tf-cND"/>
                             <constraint firstItem="Ki9-bj-SA0" firstAttribute="width" secondItem="d77-pl-2sa" secondAttribute="width" id="AH1-oO-Zwx"/>
                             <constraint firstItem="d77-pl-2sa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Cyv-bS-5Nu"/>
+                            <constraint firstItem="d77-pl-2sa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="HEz-dP-OXO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d77-pl-2sa" secondAttribute="trailing" constant="48" id="SOE-dD-ehD"/>
                             <constraint firstItem="lBc-0k-1fq" firstAttribute="top" secondItem="Ki9-bj-SA0" secondAttribute="bottom" constant="26" id="atb-Na-5LS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lBc-0k-1fq" secondAttribute="bottom" constant="70" id="mGB-NJ-BAK"/>
                             <constraint firstItem="d77-pl-2sa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="pQI-3w-o5q"/>

@@ -9,28 +9,11 @@
 import Foundation
 
 class model {
-    let majorArcanaCards:[String: String] = ["Fool" : "Go forth with faith.",
-    "Magician" : "Magic is on your side.",
-    "HighPriestess" : "A powerful woman will be part of the solution.",
-    "Empress" : "Plant the seed and it will grow.",
-    "Emperor" : "You will need to be well organised.",
-    "Heirophant" : "A powerful man will be part of the solution.",
-    "Lovers" : "You cannot do this alone.",
-    "Chariot" : "You need to find the right vehicle to achieve the outcome.",
-    "Justice" : "If you have been fair in your dealings with others, you have nothing to be concerned about.",
-    "Hermit" : "This is not the time to take action, but more study and reflection is required.",
-    "WheelOfFortune" : "The outcome has already been decided.",
-    "Strength" : "You have the skills and abilities required to pull this off.",
-    "HangedMan" : "Try looking at the situation from another perspective.",
-    "Death" : "You must finish something first, before you can move forward.",
-    "Temperance" : "A balanced approach is need for a successful outcome.",
-    "Devil" : "The devil is in the details, make sure you have made every effort for success.",
-    "Tower" : "Something unexpected will happen that will resolve the situation.",
-    "Star" : "Look to the stars, you will find your answer.",
-    "Moon" : "The answer is not known at this time, please ask again later.",
-    "Sun" : "Relax, it is done.",
-    "Judgement" : "Be discerning and consult others before making a decision.",
-    "World" : "The result you are looking for has already happened." ]
+    let majorArcanaCards:[String:MajorArcanaCard]
+    var currentCard:MajorArcanaCard = MajorArcanaCard.fool
+    init(){
+        majorArcanaCards = MajorArcanaCard.createDeck()
+    }
 //    init(){
 //        answer.append("Look to the stars to find your answer")
 //        answer += ["But dad, don't we eat the antelope"]
@@ -40,11 +23,24 @@ class model {
 //        print(answer)
 //        print(respond())
 //    }
-    var currentCardImageName = ""
+//    var currentCardImageName = ""
+//    func respond() -> (cardImageName: String, cardMessage: String){
+//        let response = Int(arc4random_uniform(UInt32(majorArcanaCards.count)))
+//        let cardMessage = Array(majorArcanaCards.values)[response]
+//        let cardImageName = Array(majorArcanaCards.keys)[response]
+//        return (cardImageName,cardMessage)
+//    }
     func respond() -> String {
         let response = Int(arc4random_uniform(UInt32(majorArcanaCards.count)))
-        let message = Array(majorArcanaCards.values)
-        currentCardImageName = Array(majorArcanaCards.keys)[response]
-        return message[response]
+        currentCard = Array(majorArcanaCards.values)[response]
+//        let message = Array(majorArcanaCards.values)
+//        currentCardImageName = Array(majorArcanaCards.keys)[response]
+        return currentCard.interpretation
     }
+//    func respond(cardImageName: inout String, message: inout String){
+//        let response = Int(arc4random_uniform(UInt32(majorArcanaCards.count)))
+//        message = Array(majorArcanaCards.values)[response]
+//        cardImageName = Array(majorArcanaCards.keys)[response]
+//
+//    }
 }
