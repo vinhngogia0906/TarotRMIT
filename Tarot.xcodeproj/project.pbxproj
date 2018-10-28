@@ -14,8 +14,8 @@
 		9711C0C121818EB900617378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9711C0BF21818EB900617378 /* LaunchScreen.storyboard */; };
 		9711C0CC21818EBA00617378 /* TarotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9711C0CB21818EBA00617378 /* TarotTests.swift */; };
 		9711C0D721818EBA00617378 /* TarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9711C0D621818EBA00617378 /* TarotUITests.swift */; };
-		9711C0E92181902300617378 /* 720032.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9711C0E82181902300617378 /* 720032.jpg */; };
 		9711C0EB2181973600617378 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9711C0EA2181973600617378 /* model.swift */; };
+		97C3F3F9218554DD001BBAE0 /* DeckOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C3F3F8218554DD001BBAE0 /* DeckOfCards.swift */; };
 		97E17613218296C50052EF4B /* MajorArcanaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E17612218296C50052EF4B /* MajorArcanaCard.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +50,8 @@
 		9711C0D221818EBA00617378 /* TarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9711C0D621818EBA00617378 /* TarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotUITests.swift; sourceTree = "<group>"; };
 		9711C0D821818EBA00617378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9711C0E82181902300617378 /* 720032.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 720032.jpg; path = ../../../Documents/720032.jpg; sourceTree = "<group>"; };
 		9711C0EA2181973600617378 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		97C3F3F8218554DD001BBAE0 /* DeckOfCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfCards.swift; sourceTree = "<group>"; };
 		97E17612218296C50052EF4B /* MajorArcanaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorArcanaCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +108,6 @@
 				9711C0E521818EF200617378 /* Model */,
 				9711C0B621818EB900617378 /* AppDelegate.swift */,
 				9711C0BD21818EB900617378 /* Assets.xcassets */,
-				9711C0E82181902300617378 /* 720032.jpg */,
 				9711C0BF21818EB900617378 /* LaunchScreen.storyboard */,
 				9711C0C221818EB900617378 /* Info.plist */,
 			);
@@ -138,6 +137,7 @@
 			children = (
 				9711C0EA2181973600617378 /* model.swift */,
 				97E17612218296C50052EF4B /* MajorArcanaCard.swift */,
+				97C3F3F8218554DD001BBAE0 /* DeckOfCards.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,7 +268,6 @@
 				9711C0C121818EB900617378 /* LaunchScreen.storyboard in Resources */,
 				9711C0BE21818EB900617378 /* Assets.xcassets in Resources */,
 				9711C0BC21818EB900617378 /* Main.storyboard in Resources */,
-				9711C0E92181902300617378 /* 720032.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C3F3F9218554DD001BBAE0 /* DeckOfCards.swift in Sources */,
 				9711C0B921818EB900617378 /* OracleController.swift in Sources */,
 				97E17613218296C50052EF4B /* MajorArcanaCard.swift in Sources */,
 				9711C0EB2181973600617378 /* model.swift in Sources */,

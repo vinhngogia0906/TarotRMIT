@@ -12,7 +12,9 @@ class model {
     let majorArcanaCards:[String:MajorArcanaCard]
     var currentCard:MajorArcanaCard = MajorArcanaCard.fool
     init(){
-        majorArcanaCards = MajorArcanaCard.createDeck()
+        var deckOfCards = DeckOfCards()
+        
+        majorArcanaCards = deckOfCards.getCardDictionary()
     }
 //    init(){
 //        answer.append("Look to the stars to find your answer")
